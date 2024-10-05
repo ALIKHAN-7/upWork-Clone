@@ -1,0 +1,365 @@
+<header class="container-fluid border bg-light">
+    <div class="row align-items-center py-3">
+        <div class="col-12 d-flex align-items-center">
+            
+            <div>
+                <img src="assets/64px-Upwork-logo.svg.png" class="img-fluid" width="100px" alt="Upwork Logo">
+            </div>
+            
+            
+            <nav class="ms-auto me-5">
+                <ul class="nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="travelInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Find Talent</a>
+                        <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="travelInfoDropdown">
+                            <li>
+                                <div class="row">
+                                    
+                                    <div class="col-md-3">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                (mouseenter)="onHover('job')" (mouseleave)="onHover('')">
+                                                Post a job and hire a pro
+                                                <a href="#" class="text-success">Talent Marketplace</a>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                (mouseenter)="onHover('projects')" (mouseleave)="onHover('')">
+                                                Browse and buy projects
+                                                <a href="#" class="text-success">Project Catalog</a>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                                                (mouseenter)="onHover('consult')" (mouseleave)="onHover('')">
+                                                Get advice from an industry expert
+                                                <a href="#" class="text-success">Consultations</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        <div *ngIf="hoveredBox === 'job' || hoveredBox === ''">
+                                            <h5 class="text-success">Post a Job</h5>
+                                            <p>Post a job and hire a pro through our Talent Marketplace. Find the right talent for your needs.</p>
+                                        </div>
+                                        <div *ngIf="hoveredBox === 'projects'">
+                                            <h5 class="text-success">Browse Projects</h5>
+                                            <p>Explore our Project Catalog and buy pre-defined projects to kickstart your business.</p>
+
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Logo Design</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/blog.e2acde7a.jpg" class="card-img-top" alt="Image 2">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Articles & Blog Posts</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/wp.15837fbb.jpg" class="card-img-top" alt="Image 3">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">WordPress</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/smm.eed9a86e.jpg" class="card-img-top" alt="Image 4">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Social Media Management</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/video.35d88c21.jpg" class="card-img-top" alt="Image 5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Video Editing</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/seo.e55382e5.jpg" class="card-img-top" alt="Image 6">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">SEO</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+
+                                            
+                                        </div>
+                                        <div *ngIf="hoveredBox === 'consult'">
+                                            <h5 class="text-success">Consultations</h5>
+                                            <p>Explore what is possible with an industry expert. See their availability and book a time that works for you.</p>
+
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <!-- Card 1 -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/web-programming.e4cfff23.png" class="card-img-top" alt="Image 1">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Web Programming</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <!-- Card 2 -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/ai.bc634263.png" class="card-img-top" alt="Image 2">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">AI Machcine Learning</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <!-- Card 3 -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/social-media.241c47a8.png" class="card-img-top" alt="Image 3">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Social Media</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <!-- Card 4 -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/marketing.49d998cf.png" class="card-img-top" alt="Image 4">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Marketting Strategy</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <!-- Card 5 -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card">
+                                                            <img src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/website-builders.95331e4d.png" class="card-img-top" alt="Image 5">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Website Builder</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+
+                                            
+
+
+
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Right Section (Skills or other content) -->
+                                    <div class="col-md-3">
+                                        <div *ngIf="hoveredBox === ''">
+                                            <ul class="list-group develop">
+                                                <li class="list-group-item">Development & IT</li>
+                                                <li class="list-group-item">Design & Creative</li>
+                                                <li class="list-group-item">Sales & Marketing</li>
+                                                <li class="list-group-item">Writing & Translation</li>
+                                                <li class="list-group-item">Admin & Customer Support</li>
+                                                <li class="list-group-item">Finance & Accounting</li>
+                                                <li class="list-group-item">HR & Training</li>
+                                                <li class="list-group-item">Legal</li>
+                                                <li class="list-group-item">Engineering & Architecture</li>
+                                                <li class="list-group-item">Hire freelancers</li>
+                                    
+                                                <!-- Add more categories if needed -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+    
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="travelInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Find Work</a>
+                        <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="travelInfoDropdown">
+                            <li class="nav-item ">
+                            <div class="row justify-content-between">
+    
+                          
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">Ways to earn</h6>
+                                    <p>Learn why Upwork has the right opportunities for you.</p>
+                     
+                                </div> 
+                            
+                               
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">Find work for your skill</h6>
+                                    <p>Explore the kind of work available in your field.</p>
+                                </div>
+                            
+                            
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">Win work with adds</h6>
+                                    <p>Get noticed by right client</p>
+                                </div>
+                            
+                            
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">Join freelancer plus</h6>
+                                    <p>Access more Connects, get strategic insights on competitors, and try out the latest tools.</p>
+                                </div>
+                            
+                            </div>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="travelInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Why UpWork</a>
+                        <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="travelInfoDropdown">
+                            <li class="nav-item ">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="row justify-content-around">
+        
+                              
+                                        <div class="col-md-4  border rounded fw">
+                                            <h6 class="dropdown-header">Sucess stories</h6>
+                                            <p>Discover how teams work strategically and grow together</p>
+                             
+                                        </div> 
+                                    
+                                       
+                                        <div class="col-md-4 border rounded fw">
+                                            <h6 class="dropdown-header">Reviews</h6>
+                                            <p>See what it’s like to collaborate on upWork</p>
+                                        </div>
+                                    
+                                    
+                                    </div>
+        
+                                    <div class="row justify-content-around mt-5">
+            
+                                  
+                                        <div class="col-md-4 border rounded fw">
+                                            <h6 class="dropdown-header">How to hire</h6>
+                                            <p>Learn about the different ways to get work done.</p>
+                             
+                                        </div> 
+                                    
+                                       
+                                        <div class="col-md-4 border rounded fw">
+                                            <h6 class="dropdown-header">How to find Work</h6>
+                                            <p>Learn about how to grow your independent career.</p>
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <h6 class="dropdown-header">Where works Get</h6>
+                                    <div class="border p-3 fw">
+                                        <p>Guides<br>
+                                        <p>Getting Started as a Freelancer</p>
+                                    </div>
+                                    <div class="border p-3 fw">
+                                        <p>Guides<br>
+                                        <p>Growing Your Freelance Career</p>
+                                    </div>
+                                    <div class="border p-3 fw">
+                                        <p>Guides<br>
+                                        <p>Hiring & Working with Independent Talent</p>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+
+
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="travelInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Whats New</a>
+                        <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="travelInfoDropdown">
+                            <li class="nav-item ">
+                            <div class="row justify-content-around">
+    
+                          
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">UpWork updates</h6>
+                                    <p>Our spring 2024 release, with 20+ new products for hire intelligence.</p>
+                     
+                                </div> 
+                            
+                               
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">Blog</h6>
+                                    <p>News and stories from the world’s work marketplace.</p>
+                                </div>
+                            
+                                <div class="col-md-2 fw">
+                                    <h6 class="dropdown-header">Research Institue</h6>
+                                    <p>Insights and tools for business leaders navigating a new world of work.</p>
+                                </div>
+                            
+                            </div>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enterprises</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="border rounded-pill p-2 me-5 d-flex align-items-center">
+                <img src="assets/search .png" width="30px" height="30px" alt="Search Icon">
+                <input class="inp border-0 ms-2" type="text" placeholder="Search">
+                <span class="mx-2">|</span>
+                <select class="border-0">
+                    <option>project</option>
+                    <option>talent</option>
+                    <option>Job</option>
+                </select>
+            </div>
+
+            <!-- Login and Sign-Up Section -->
+            <div class="me-5">
+                <a href="#" class="text-dark">Login</a>
+            </div>
+            <div class="me-5">
+                <button routerLink="/join" class="btn btn-success">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</header>
+<app-header2 class="fixed-header"></app-header2>
+

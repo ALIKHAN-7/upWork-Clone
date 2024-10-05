@@ -1,0 +1,77 @@
+/* General Navigation Styling */
+.nav {
+    font-size: 16px;
+}
+.nav-link {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* Optional hover effect for nav links */
+.nav-link:hover {
+    color: #0a9b56; /* Change to desired color */
+}
+
+/* Search Bar Styling */
+.input {
+    border: 1px solid #ccc; /* Define a border color */
+    padding: 5px 10px;
+    border-radius: 20px; /* Optional rounded corners */
+}
+.inp {
+    border-style: none;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    width: 100%; /* Ensure it takes available space */
+}
+
+/* Remove border for dropdown selector */
+.no-border {
+    border: none;
+    background-color: transparent;
+}
+
+/* Dropdown Styling */
+.nav-item .dropdown-menu {
+    left: 0;
+    right: 0;
+    margin-top: 0; 
+    width: 100vw; /* Ensures full viewport width for dropdown */
+    padding: 20px; /* Optional for spacing */
+}
+
+/* Dropdown items styling */
+.dropdown-item {
+    padding: 10px 20px; /* More compact padding */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Content Box Styling */
+.content-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 200px;
+    border-radius: 8px; /* Add rounded corners */
+    max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+/* Optional: Improve hover state for better UX */
+.content-box:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+.fw:hover{
+    background-color:  #ccc;
+    border-radius: 10%;
+}
+

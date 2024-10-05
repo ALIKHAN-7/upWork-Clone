@@ -1,0 +1,34 @@
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  button {
+    width: 48%; /* Adjust the width of the button */
+  }
+  
+  a {
+    color: green;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button[type="submit"] {
+    background-color: green;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  
+  .form-check-input {
+    margin-right: 10px;
+  }
+  

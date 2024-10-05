@@ -1,0 +1,186 @@
+.howWork{
+    font-size: 80px;
+}
+.forget{
+    font-size: 20px;
+    
+}
+.backg{
+    background-color: antiquewhite;
+}
+.hir-btn:hover{
+    background-color: yellow;
+}
+.card{
+    background-color: rgb(247, 245, 241);
+}
+.card:hover{
+    background-color: rgb(236, 229, 215);
+}
+.enterprise{
+    background-color:#13544E;
+}
+.good{
+    color: rgb(76, 185, 76);
+}
+.star-rating {
+    color: #ffd700; /* Gold color for stars */
+  }
+.bg-success {
+    background-color: #00b140 !important; /* Upwork green color */
+}
+.danceImg{
+    height: 100px;
+}
+.floating-image {
+    position: absolute;
+    top: 50%;
+    left:500px;/* Adjust this to control the horizontal position */
+    transform: translateY(-50%);
+    width: 250px; /* Adjust the width as needed */
+    z-index: 1; /* Ensure it floats on top of content */
+  }
+  
+  .bg-success {
+    background-color: #00b140 ;
+    position: relative;
+    z-index: 0; 
+
+  }
+  
+  .star-rating {
+    color: #ffd700; 
+  }
+  .custom-height {
+    height: 400px; /* Increase the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content at the bottom */
+  }
+  
+  .content-spacing {
+    margin-top: auto; /* Add margin to push content lower */
+  }
+  .talent{
+    position:relative;
+    right: 200px;
+    padding-right: 500px;
+  }
+  .trusted-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .brand-box {
+    min-width: 300px;
+    background-color:#13544E; /* Adjust background color to match */
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+  .brand-box2 {
+    min-width: 300px;
+    background-color:#c58141; /* Adjust background color to match */
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+  .brand-section {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .brand-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }  
+  
+  .brand-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .author {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .results {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .results div {
+    text-align: left;
+  }
+  
+  hr {
+    border: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  .lm{
+    border: 1px solid green;
+  }
+  .lma{
+    text-decoration: none;
+  }
+
+  .skills-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-container ul li {
+    cursor: pointer;
+    padding: 10px;
+    color: gray;
+  }
+  
+  .skills-container ul li.active {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .skills-list {
+    margin-top: 20px;
+  }
+  li{
+    font-size: 30px;
+  }
+  .up{
+    margin-top: 60px;
+  }
+
+  
+  
+  
+  
+
+
+  
+
+  

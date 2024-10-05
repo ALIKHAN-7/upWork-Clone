@@ -1,0 +1,26 @@
+nav ul li a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: green;
+    text-decoration: underline;
+  }
+
+  nav {
+    background-color: #343a40;
+  }
+
+  .dropdown-menu {
+    background-color: #f9fcff;
+  }
+
+  .dropdown-menu a {
+    color: white;
+  }
+
+  .dropdown-menu a:hover {
+    color: green;
+    text-decoration: underline;
+  }
